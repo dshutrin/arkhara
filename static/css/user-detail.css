@@ -13,22 +13,16 @@ html, body {
     padding: 0;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    height: 100vh;
-}
-
 .logo-data {
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
-}
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+    }
 
 .logo-data > img {
     min-height: 80%;
@@ -62,4 +56,21 @@ html, body {
 
 .res-span {
     font-size: 18px;
+}
+
+@media (min-width: 501px) {
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 100vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        margin: 2rem;
+        display: grid;
+        grid-template-columns: 100%;
+        height: calc(100vh - 4rem);
+    }
 }
