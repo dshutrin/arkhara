@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Neucha&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+}
+
+.logo-data {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.logo-data > img {
+    min-height: 80%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.detail-info {
+    overflow-y: scroll;
+}
+
+.detail-info::-webkit-scrollbar {
+    display: none;
+}
+
+.resources {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.res {
+    background-color: #476f95;
+    border-radius: 1.5rem;
+    color: whitesmoke;
+    margin: 0.5rem;
+    padding: 1rem;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.res-span {
+    font-size: 18px;
+}
